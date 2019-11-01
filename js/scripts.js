@@ -14,24 +14,20 @@ function returnList(inputNumber){
   } else {
 
   for(i = 0; i <= inputNumber; i++){
-    // if(i <= inputNumber){
+console.log(i);
       if(i.toString().indexOf('3') >= 0){
         result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-        i++;
-        console.log(i);
-      } if(i.toString().indexOf('2') >= 0){
-        result.push("Boop!");
-        i++;
-        console.log(i);
-      } if(i.toString().indexOf('1') >= 0){
-        result.push("Beep!");
-        i++;
-        console.log(i);
-      } else {
-      result.push(i);
-      i++;
       }
-    alert(i);
+      else if(i.toString().indexOf('2') >= 0){
+        result.push("Boop!");
+      }
+
+      else if(i.toString().indexOf('1') >= 0){
+        result.push("Beep!");
+      }
+      else {
+      result.push(i);
+      }
   }
   return result;
 }
