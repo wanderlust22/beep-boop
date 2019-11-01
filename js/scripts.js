@@ -42,5 +42,6 @@ $(document).ready(function(){
 
     var inputNumber = $("#inputNumber").val();
     $("#printResult").text(returnList(inputNumber));
+    $("img").show();
   });
 });
