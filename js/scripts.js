@@ -13,25 +13,29 @@ function returnList(inputNumber){
     return result;
   } else {
 
-  for(i = 0; i < inputNumber; i++){
-    while(i <= inputNumber){
-      if([i] == 1){
-        result.push("Beep!")
-      } if([i] == 2){
-        result.push("Boop!")
-      } if([i] == 3){
-        result.push("I'm sorry, Dave. I'm afraid I can't do that.")
+  for(i = 0; i <= inputNumber; i++){
+    // if(i <= inputNumber){
+      if(i.toString().indexOf('3') >= 0){
+        result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+        i++;
+        console.log(i);
+      } if(i.toString().indexOf('2') >= 0){
+        result.push("Boop!");
+        i++;
+        console.log(i);
+      } if(i.toString().indexOf('1') >= 0){
+        result.push("Beep!");
+        i++;
+        console.log(i);
       } else {
-      result.push([i]);
-      }
+      result.push(i);
       i++;
-    }
+      }
+    alert(i);
   }
   return result;
-
 }
 }
-
 
 
 
@@ -42,7 +46,5 @@ $(document).ready(function(){
 
     var inputNumber = $("#inputNumber").val();
     $("#printResult").text(returnList(inputNumber));
-
-
   });
 });
