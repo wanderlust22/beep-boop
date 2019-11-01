@@ -14,26 +14,19 @@ function returnList(inputNumber){
   } else {
 
   for(i = 0; i <= inputNumber; i++){
-console.log(i);
       if(i.toString().indexOf('3') >= 0){
         result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-      }
-      else if(i.toString().indexOf('2') >= 0){
+      } else if(i.toString().indexOf('2') >= 0){
         result.push("Boop!");
-      }
-
-      else if(i.toString().indexOf('1') >= 0){
+      } else if(i.toString().indexOf('1') >= 0){
         result.push("Beep!");
-      }
-      else {
+      } else {
       result.push(i);
       }
   }
   return result;
 }
 }
-
-
 
 // Front end logic
 $(document).ready(function(){
